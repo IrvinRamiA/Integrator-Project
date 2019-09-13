@@ -11,6 +11,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include synergy/ssp/src/driver/r_ioport/subdir.mk
+-include synergy/ssp/src/driver/r_gpt/subdir.mk
 -include synergy/ssp/src/driver/r_fmi/subdir.mk
 -include synergy/ssp/src/driver/r_elc/subdir.mk
 -include synergy/ssp/src/driver/r_cgc/hw/subdir.mk
@@ -54,7 +55,7 @@ all: Integrator_Project.elf secondary-outputs
 Integrator_Project.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C Linker'
-	$(file > Integrator_Project.elf.in,-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g3 -T "C:\\Users\\User\\Desktop\\Workspace E2Studio\\Integrator_Project\\script\\S7G2.ld" -Xlinker --gc-sections -L "C:\\Users\\User\\Desktop\\Workspace E2Studio\\Integrator_Project\\synergy\\ssp\\src\\bsp\\cmsis\\DSP_Lib\\cm4_gcc" -Wl,-Map,"Integrator_Project.map" --specs=nano.specs --specs=rdimon.specs -o "Integrator_Project.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group)
+	$(file > Integrator_Project.elf.in,-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g3 -T "C:\\Users\\Juan\\Documents\\DSE\\Integrator-Project\\Code\\Integrator_Project\\script\\S7G2.ld" -Xlinker --gc-sections -L "C:\\Users\\Juan\\Documents\\DSE\\Integrator-Project\\Code\\Integrator_Project\\synergy\\ssp\\src\\bsp\\cmsis\\DSP_Lib\\cm4_gcc" -Wl,-Map,"Integrator_Project.map" --specs=nano.specs --specs=rdimon.specs -o "Integrator_Project.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group)
 	arm-none-eabi-gcc @"Integrator_Project.elf.in"
 	@echo 'Finished building target: $@'
 	@echo ' '
