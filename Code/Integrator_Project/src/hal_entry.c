@@ -7,9 +7,10 @@
 ***********************************************************************************************************************/
 
 #include "hal_data.h"
+#include "r_timer_api.h"
 
-int adcData = 0;
-int percentage = 0;
+uint16_t adcData;
+timer_size_t percentage;
 
 void hal_entry(void)
 {
@@ -23,6 +24,8 @@ void hal_entry(void)
     while(1)
     {
         g_adc0.p_api->read(g_adc0.p_ctrl, ADC_REG_CHANNEL_0, &adcData);
-        percentage = (adcData * 100) / 255;
+        percentage = (timer_size_t)(adcData * 100) / 255;
+
+        g_timer1.p_api->dutyCycleSet(g_timer1.p_ctrl, percentage, TIMER_PWM_UNIT_PERCENT, 1);
     }
 }
