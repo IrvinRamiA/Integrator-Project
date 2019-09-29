@@ -35,6 +35,7 @@ uint8_t SpeedPidControl(uint8_t measuredSpeedInRpm, uint8_t setPointInRpm)
         previousError = error;
         previousTime = time;
     }
+
     return output;
 }
 
