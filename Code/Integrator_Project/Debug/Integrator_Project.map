@@ -1466,8 +1466,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
  .debug_macro   0x00000000       0x10 ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
  .debug_macro   0x00000000       0x10 ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
- .debug_line    0x00000000      0x904 ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
- .debug_str     0x00000000    0x10032 ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
+ .debug_line    0x00000000      0x97c ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
+ .debug_str     0x00000000    0x1003e ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
  .comment       0x00000000       0x71 ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
  .debug_frame   0x00000000       0x20 ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
  .ARM.attributes
@@ -1893,8 +1893,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
  .debug_macro   0x00000000      0x180 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
  .debug_macro   0x00000000      0x23b ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
- .debug_line    0x00000000      0x971 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
- .debug_str     0x00000000    0x103a6 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
+ .debug_line    0x00000000      0x9e9 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
+ .debug_str     0x00000000    0x103b2 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
  .comment       0x00000000       0x71 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
  .debug_frame   0x00000000       0x28 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
  .ARM.attributes
@@ -2229,8 +2229,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./synergy/board/s7g2_sk/bsp_leds.o
  .debug_macro   0x00000000       0x10 ./synergy/board/s7g2_sk/bsp_leds.o
  .debug_macro   0x00000000       0x10 ./synergy/board/s7g2_sk/bsp_leds.o
- .debug_line    0x00000000      0x8e0 ./synergy/board/s7g2_sk/bsp_leds.o
- .debug_str     0x00000000     0xeeba ./synergy/board/s7g2_sk/bsp_leds.o
+ .debug_line    0x00000000      0x958 ./synergy/board/s7g2_sk/bsp_leds.o
+ .debug_str     0x00000000     0xeec6 ./synergy/board/s7g2_sk/bsp_leds.o
  .comment       0x00000000       0x71 ./synergy/board/s7g2_sk/bsp_leds.o
  .ARM.attributes
                 0x00000000       0x39 ./synergy/board/s7g2_sk/bsp_leds.o
@@ -2433,8 +2433,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/common_data.o
- .debug_line    0x00000000      0x9d1 ./src/synergy_gen/common_data.o
- .debug_str     0x00000000    0x149df ./src/synergy_gen/common_data.o
+ .debug_line    0x00000000      0xa55 ./src/synergy_gen/common_data.o
+ .debug_str     0x00000000    0x149eb ./src/synergy_gen/common_data.o
  .comment       0x00000000       0x71 ./src/synergy_gen/common_data.o
  .debug_frame   0x00000000       0x20 ./src/synergy_gen/common_data.o
  .ARM.attributes
@@ -2648,6 +2648,160 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/pin_data.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/pin_data.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/pin_data.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .text          0x00000000        0x0 ./src/PidControl.o
+ .data          0x00000000        0x0 ./src/PidControl.o
+ .bss           0x00000000        0x0 ./src/PidControl.o
+ .text.SpeedPidControl
+                0x00000000       0xd4 ./src/PidControl.o
+ .bss.integral  0x00000000        0x1 ./src/PidControl.o
+ .bss.samplingTime
+                0x00000000        0x1 ./src/PidControl.o
+ .bss.previousTime
+                0x00000000        0x1 ./src/PidControl.o
+ .bss.previousError
+                0x00000000        0x1 ./src/PidControl.o
+ .bss.error     0x00000000        0x1 ./src/PidControl.o
+ .bss.derivativeError
+                0x00000000        0x1 ./src/PidControl.o
+ .bss.proportional
+                0x00000000        0x1 ./src/PidControl.o
+ .bss.derivative
+                0x00000000        0x1 ./src/PidControl.o
+ .bss.output    0x00000000        0x1 ./src/PidControl.o
+ .bss.time      0x00000000        0x1 ./src/PidControl.o
+ .bss.integralError
+                0x00000000        0x1 ./src/PidControl.o
+ .debug_info    0x00000000      0x2d9 ./src/PidControl.o
+ .debug_abbrev  0x00000000      0x13a ./src/PidControl.o
+ .debug_loc     0x00000000       0x42 ./src/PidControl.o
+ .debug_aranges
+                0x00000000       0x20 ./src/PidControl.o
+ .debug_ranges  0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000      0x3d7 ./src/PidControl.o
+ .debug_macro   0x00000000      0x874 ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0x44 ./src/PidControl.o
+ .debug_macro   0x00000000       0xe3 ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000      0x1df ./src/PidControl.o
+ .debug_macro   0x00000000       0x58 ./src/PidControl.o
+ .debug_macro   0x00000000       0x35 ./src/PidControl.o
+ .debug_macro   0x00000000       0x9c ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x28 ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0x6a ./src/PidControl.o
+ .debug_macro   0x00000000       0x2e ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x28 ./src/PidControl.o
+ .debug_macro   0x00000000       0x1c ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0xd9 ./src/PidControl.o
+ .debug_macro   0x00000000      0xfe0 ./src/PidControl.o
+ .debug_macro   0x00000000       0xe2 ./src/PidControl.o
+ .debug_macro   0x00000000      0x7a4 ./src/PidControl.o
+ .debug_macro   0x00000000       0x5e ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0x1c ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x58 ./src/PidControl.o
+ .debug_macro   0x00000000      0x166 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x64 ./src/PidControl.o
+ .debug_macro   0x00000000       0x69 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x1c ./src/PidControl.o
+ .debug_macro   0x00000000       0x29 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x34 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x35 ./src/PidControl.o
+ .debug_macro   0x00000000       0x52 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x43 ./src/PidControl.o
+ .debug_macro   0x00000000      0x180 ./src/PidControl.o
+ .debug_macro   0x00000000      0x297 ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0xfa ./src/PidControl.o
+ .debug_line    0x00000000      0xba7 ./src/PidControl.o
+ .debug_str     0x00000000    0x10662 ./src/PidControl.o
+ .comment       0x00000000       0x71 ./src/PidControl.o
+ .debug_frame   0x00000000       0x38 ./src/PidControl.o
+ .ARM.attributes
+                0x00000000       0x39 ./src/PidControl.o
  .group         0x00000000        0x8 ./src/hal_entry.o
  .group         0x00000000        0x8 ./src/hal_entry.o
  .group         0x00000000        0x8 ./src/hal_entry.o
@@ -3092,8 +3246,9 @@ LOAD ./src/synergy_gen/common_data.o
 LOAD ./src/synergy_gen/hal_data.o
 LOAD ./src/synergy_gen/main.o
 LOAD ./src/synergy_gen/pin_data.o
+LOAD ./src/PidControl.o
 LOAD ./src/hal_entry.o
-LOAD C:\Users\Juan\Documents\DSE\Integrator-Project\Code\Integrator_Project\synergy\ssp\src\bsp\cmsis\DSP_Lib\cm4_gcc\libDSP_Lib.a
+LOAD C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\src\bsp\cmsis\DSP_Lib\cm4_gcc\libDSP_Lib.a
 END GROUP
 START GROUP
 LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a
@@ -5009,93 +5164,93 @@ OUTPUT(Integrator_Project.elf elf32-littlearm)
  .debug_macro   0x00007bf4      0x2a5 ./src/synergy_gen/pin_data.o
  .debug_macro   0x00007e99      0x3cd ./src/hal_entry.o
 
-.debug_line     0x00000000    0x12c4a
- .debug_line    0x00000000      0xf02 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
- .debug_line    0x00000f02     0x1047 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
- .debug_line    0x00001f49      0xbcf ./synergy/ssp/src/driver/r_fmi/r_fmi.o
- .debug_line    0x00002b18      0xb58 ./synergy/ssp/src/driver/r_elc/r_elc.o
- .debug_line    0x00003670     0x125c ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
- .debug_line    0x000048cc      0xf61 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
- .debug_line    0x0000582d     0x12a9 ./synergy/ssp/src/driver/r_adc/r_adc.o
- .debug_line    0x00006ad6      0x926 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
- .debug_line    0x000073fc      0xa59 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
- .debug_line    0x00007e55      0xaad ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
- .debug_line    0x00008902      0x8f7 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_fmi_R7FS7G27H3A01CFC.o
- .debug_line    0x000091f9      0x9cd ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
- .debug_line    0x00009bc6      0x8eb ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
- .debug_line    0x0000a4b1      0x99e ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
- .debug_line    0x0000ae4f      0x8f0 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
- .debug_line    0x0000b73f      0x92c ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
- .debug_line    0x0000c06b      0x934 ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
- .debug_line    0x0000c99f      0x925 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
- .debug_line    0x0000d2c4      0x9e4 ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
- .debug_line    0x0000dca8      0x96c ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
- .debug_line    0x0000e614      0x92a ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
- .debug_line    0x0000ef3e      0xad1 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
- .debug_line    0x0000fa0f      0x8f0 ./synergy/board/s7g2_sk/bsp_init.o
- .debug_line    0x000102ff      0xa1a ./synergy/board/s7g2_sk/bsp_qspi.o
- .debug_line    0x00010d19      0xa87 ./src/synergy_gen/hal_data.o
- .debug_line    0x000117a0       0x49 ./src/synergy_gen/main.o
- .debug_line    0x000117e9      0x95c ./src/synergy_gen/pin_data.o
- .debug_line    0x00012145      0xb05 ./src/hal_entry.o
+.debug_line     0x00000000    0x139a6
+ .debug_line    0x00000000      0xf86 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
+ .debug_line    0x00000f86     0x10cb ./synergy/ssp/src/driver/r_gpt/r_gpt.o
+ .debug_line    0x00002051      0xc53 ./synergy/ssp/src/driver/r_fmi/r_fmi.o
+ .debug_line    0x00002ca4      0xbdc ./synergy/ssp/src/driver/r_elc/r_elc.o
+ .debug_line    0x00003880     0x12e0 ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
+ .debug_line    0x00004b60      0xfe5 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+ .debug_line    0x00005b45     0x132d ./synergy/ssp/src/driver/r_adc/r_adc.o
+ .debug_line    0x00006e72      0x99e ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
+ .debug_line    0x00007810      0xadd ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
+ .debug_line    0x000082ed      0xb31 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
+ .debug_line    0x00008e1e      0x96f ./synergy/ssp/src/bsp/mcu/s7g2/bsp_fmi_R7FS7G27H3A01CFC.o
+ .debug_line    0x0000978d      0xa45 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
+ .debug_line    0x0000a1d2      0x963 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
+ .debug_line    0x0000ab35      0xa16 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+ .debug_line    0x0000b54b      0x968 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
+ .debug_line    0x0000beb3      0x9a4 ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
+ .debug_line    0x0000c857      0x9ac ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
+ .debug_line    0x0000d203      0x99d ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
+ .debug_line    0x0000dba0      0xa5c ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
+ .debug_line    0x0000e5fc      0x9e4 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
+ .debug_line    0x0000efe0      0x9a2 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
+ .debug_line    0x0000f982      0xb61 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
+ .debug_line    0x000104e3      0x968 ./synergy/board/s7g2_sk/bsp_init.o
+ .debug_line    0x00010e4b      0xa92 ./synergy/board/s7g2_sk/bsp_qspi.o
+ .debug_line    0x000118dd      0xb0b ./src/synergy_gen/hal_data.o
+ .debug_line    0x000123e8       0x49 ./src/synergy_gen/main.o
+ .debug_line    0x00012431      0x9e0 ./src/synergy_gen/pin_data.o
+ .debug_line    0x00012e11      0xb95 ./src/hal_entry.o
 
-.debug_str      0x00000000    0x229ab
- .debug_str     0x00000000    0x15d80 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
-                              0x1611a (size before relaxing)
- .debug_str     0x00015d80     0x2487 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
-                              0x14d7e (size before relaxing)
- .debug_str     0x00018207      0xa10 ./synergy/ssp/src/driver/r_fmi/r_fmi.o
-                              0x131ca (size before relaxing)
- .debug_str     0x00018c17      0x604 ./synergy/ssp/src/driver/r_elc/r_elc.o
-                              0x12dd2 (size before relaxing)
- .debug_str     0x0001921b      0xd4a ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
-                              0x1102a (size before relaxing)
- .debug_str     0x00019f65      0x87b ./synergy/ssp/src/driver/r_cgc/r_cgc.o
-                              0x1501d (size before relaxing)
- .debug_str     0x0001a7e0     0x48cd ./synergy/ssp/src/driver/r_adc/r_adc.o
-                              0x17f83 (size before relaxing)
- .debug_str     0x0001f0ad       0x9a ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
-                               0xf046 (size before relaxing)
- .debug_str     0x0001f147      0x408 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
-                               0xff36 (size before relaxing)
- .debug_str     0x0001f54f      0x490 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
-                               0xe956 (size before relaxing)
- .debug_str     0x0001f9df       0x3b ./synergy/ssp/src/bsp/mcu/s7g2/bsp_fmi_R7FS7G27H3A01CFC.o
-                               0xdde0 (size before relaxing)
- .debug_str     0x0001fa1a      0x368 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
-                               0xf474 (size before relaxing)
- .debug_str     0x0001fd82     0x135e ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
-                               0xf450 (size before relaxing)
- .debug_str     0x000210e0      0x394 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
-                              0x101fd (size before relaxing)
- .debug_str     0x00021474       0xcb ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
-                               0xde65 (size before relaxing)
- .debug_str     0x0002153f      0x184 ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
-                               0xf11f (size before relaxing)
- .debug_str     0x000216c3       0xff ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
-                               0xdf17 (size before relaxing)
- .debug_str     0x000217c2       0x84 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
-                               0xe2ca (size before relaxing)
- .debug_str     0x00021846      0x181 ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
-                               0xf43b (size before relaxing)
- .debug_str     0x000219c7       0xb0 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
-                               0xeae4 (size before relaxing)
- .debug_str     0x00021a77       0xe1 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
-                               0xde8d (size before relaxing)
- .debug_str     0x00021b58      0x1ce ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
-                              0x1441d (size before relaxing)
- .debug_str     0x00021d26       0x32 ./synergy/board/s7g2_sk/bsp_init.o
-                               0xdddc (size before relaxing)
- .debug_str     0x00021d58      0x8ca ./synergy/board/s7g2_sk/bsp_qspi.o
-                               0xe9a9 (size before relaxing)
- .debug_str     0x00022622      0x101 ./src/synergy_gen/hal_data.o
-                              0x14eae (size before relaxing)
- .debug_str     0x00022723       0x66 ./src/synergy_gen/main.o
+.debug_str      0x00000000    0x229b7
+ .debug_str     0x00000000    0x15d8c ./synergy/ssp/src/driver/r_ioport/r_ioport.o
+                              0x16126 (size before relaxing)
+ .debug_str     0x00015d8c     0x2487 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
+                              0x14d8a (size before relaxing)
+ .debug_str     0x00018213      0xa10 ./synergy/ssp/src/driver/r_fmi/r_fmi.o
+                              0x131d6 (size before relaxing)
+ .debug_str     0x00018c23      0x604 ./synergy/ssp/src/driver/r_elc/r_elc.o
+                              0x12dde (size before relaxing)
+ .debug_str     0x00019227      0xd4a ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
+                              0x11036 (size before relaxing)
+ .debug_str     0x00019f71      0x87b ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+                              0x15029 (size before relaxing)
+ .debug_str     0x0001a7ec     0x48cd ./synergy/ssp/src/driver/r_adc/r_adc.o
+                              0x17f8f (size before relaxing)
+ .debug_str     0x0001f0b9       0x9a ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
+                               0xf052 (size before relaxing)
+ .debug_str     0x0001f153      0x408 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
+                               0xff42 (size before relaxing)
+ .debug_str     0x0001f55b      0x490 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
+                               0xe962 (size before relaxing)
+ .debug_str     0x0001f9eb       0x3b ./synergy/ssp/src/bsp/mcu/s7g2/bsp_fmi_R7FS7G27H3A01CFC.o
+                               0xddec (size before relaxing)
+ .debug_str     0x0001fa26      0x368 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
+                               0xf480 (size before relaxing)
+ .debug_str     0x0001fd8e     0x135e ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
+                               0xf45c (size before relaxing)
+ .debug_str     0x000210ec      0x394 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+                              0x10209 (size before relaxing)
+ .debug_str     0x00021480       0xcb ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
+                               0xde71 (size before relaxing)
+ .debug_str     0x0002154b      0x184 ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
+                               0xf12b (size before relaxing)
+ .debug_str     0x000216cf       0xff ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
+                               0xdf23 (size before relaxing)
+ .debug_str     0x000217ce       0x84 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
+                               0xe2d6 (size before relaxing)
+ .debug_str     0x00021852      0x181 ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
+                               0xf447 (size before relaxing)
+ .debug_str     0x000219d3       0xb0 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
+                               0xeaf0 (size before relaxing)
+ .debug_str     0x00021a83       0xe1 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
+                               0xde99 (size before relaxing)
+ .debug_str     0x00021b64      0x1ce ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
+                              0x14429 (size before relaxing)
+ .debug_str     0x00021d32       0x32 ./synergy/board/s7g2_sk/bsp_init.o
+                               0xdde8 (size before relaxing)
+ .debug_str     0x00021d64      0x8ca ./synergy/board/s7g2_sk/bsp_qspi.o
+                               0xe9b5 (size before relaxing)
+ .debug_str     0x0002262e      0x101 ./src/synergy_gen/hal_data.o
+                              0x14eba (size before relaxing)
+ .debug_str     0x0002272f       0x66 ./src/synergy_gen/main.o
                                0x24ed (size before relaxing)
- .debug_str     0x00022789      0x1fc ./src/synergy_gen/pin_data.o
-                               0xf427 (size before relaxing)
- .debug_str     0x00022985       0x26 ./src/hal_entry.o
-                              0x14b06 (size before relaxing)
+ .debug_str     0x00022795      0x1fc ./src/synergy_gen/pin_data.o
+                               0xf433 (size before relaxing)
+ .debug_str     0x00022991       0x26 ./src/hal_entry.o
+                              0x14b12 (size before relaxing)
 
 .debug_frame    0x00000000     0x1918
  .debug_frame   0x00000000      0x258 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
