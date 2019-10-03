@@ -3215,7 +3215,11 @@ LOAD ./src/synergy_gen/main.o
 LOAD ./src/synergy_gen/pin_data.o
 LOAD ./src/AnalogToDigitalConverter.o
 LOAD ./src/hal_entry.o
+<<<<<<< HEAD
 LOAD C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\src\bsp\cmsis\DSP_Lib\cm4_gcc\libDSP_Lib.a
+=======
+LOAD C:\Users\Juan\Documents\GitHub\Integrator-Project\Code\Integrator_Project\synergy\ssp\src\bsp\cmsis\DSP_Lib\cm4_gcc\libDSP_Lib.a
+>>>>>>> develop
 END GROUP
 START GROUP
 LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a
@@ -3241,7 +3245,11 @@ LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm
 LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libnosys.a
 END GROUP
 
+<<<<<<< HEAD
 .text           0x00000000     0x5b50
+=======
+.text           0x00000000     0x5b24
+>>>>>>> develop
                 0x00000000                __ROM_Start = .
  *(.vectors)
  .vectors       0x00000000       0x40 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
@@ -4104,6 +4112,7 @@ END GROUP
                 0x00004a2c       0x18 ./src/AnalogToDigitalConverter.o
                 0x00004a2c                AdcDataToPercentage
  .text.hal_entry
+<<<<<<< HEAD
                 0x00004a44       0x4c ./src/hal_entry.o
                 0x00004a44                hal_entry
  .text          0x00004a90       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_aeabi_uldivmod.o)
@@ -4130,6 +4139,34 @@ END GROUP
  .fini          0x000050a8        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
                 0x000050a8                _fini
  .fini          0x000050ac        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
+=======
+                0x000049e0       0x84 ./src/hal_entry.o
+                0x000049e0                hal_entry
+ .text          0x00004a64       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_aeabi_uldivmod.o)
+                0x00004a64                __aeabi_uldivmod
+ .text          0x00004a94       0x60 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(bpabi.o)
+                0x00004a94                __gnu_ldivmod_helper
+                0x00004ac4                __gnu_uldivmod_helper
+ .text          0x00004af4        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_dvmd_tls.o)
+                0x00004af4                __aeabi_idiv0
+                0x00004af4                __aeabi_ldiv0
+ .text          0x00004af8      0x29c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_divdi3.o)
+                0x00004af8                __divdi3
+ .text          0x00004d94      0x26c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_udivdi3.o)
+                0x00004d94                __udivdi3
+ .text.memset   0x00005000       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg_nano.a(lib_a-memset.o)
+                0x00005000                memset
+ *(.version)
+ .version       0x00005010       0x60 ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
+ *(.init)
+ .init          0x00005070        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+                0x00005070                _init
+ .init          0x00005074        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
+ *(.fini)
+ .fini          0x0000507c        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+                0x0000507c                _fini
+ .fini          0x00005080        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
+>>>>>>> develop
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -4142,6 +4179,7 @@ END GROUP
  *(.dtors)
  *(.rodata*)
  .rodata.g_ioport_on_ioport
+<<<<<<< HEAD
                 0x000050b4       0x3c ./synergy/ssp/src/driver/r_ioport/r_ioport.o
                 0x000050b4                g_ioport_on_ioport
  .rodata.g_vbatt_pins_input
@@ -4248,10 +4286,119 @@ END GROUP
  .eh_frame      0x00005b4c        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
  .eh_frame      0x00005b4c        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
                 0x00005b50                __ROM_End = .
+=======
+                0x00005088       0x3c ./synergy/ssp/src/driver/r_ioport/r_ioport.o
+                0x00005088                g_ioport_on_ioport
+ .rodata.g_vbatt_pins_input
+                0x000050c4        0x6 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
+ *fill*         0x000050ca        0x2 ff
+ .rodata.g_timer_on_gpt
+                0x000050cc       0x28 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
+                0x000050cc                g_timer_on_gpt
+ .rodata.g_gpt_version
+                0x000050f4        0x4 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
+ .rodata.bit_count_mask
+                0x000050f8        0x8 ./synergy/ssp/src/driver/r_fmi/r_fmi.o
+ .rodata.bit_count
+                0x00005100       0x80 ./synergy/ssp/src/driver/r_fmi/r_fmi.o
+ .rodata.g_fmi_on_fmi
+                0x00005180       0x18 ./synergy/ssp/src/driver/r_fmi/r_fmi.o
+                0x00005180                g_fmi_on_fmi
+ .rodata.g_fmi_version
+                0x00005198        0x4 ./synergy/ssp/src/driver/r_fmi/r_fmi.o
+ .rodata.g_elc_on_elc
+                0x0000519c       0x1c ./synergy/ssp/src/driver/r_elc/r_elc.o
+                0x0000519c                g_elc_on_elc
+ .rodata.s_elc_version
+                0x000051b8        0x4 ./synergy/ssp/src/driver/r_elc/r_elc.o
+ .rodata.g_pllccr2_div_value
+                0x000051bc        0x6 ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
+ *fill*         0x000051c2        0x2 ff
+ .rodata.g_pllccr_div_value
+                0x000051c4        0x6 ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
+ *fill*         0x000051ca        0x2 ff
+ .rodata.g_pllccr_div_setting
+                0x000051cc        0x6 ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
+ *fill*         0x000051d2        0x2 ff
+ .rodata.g_pllccr2_div_setting
+                0x000051d4        0x8 ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
+ .rodata.g_cgc_on_cgc
+                0x000051dc       0x6c ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+                0x000051dc                g_cgc_on_cgc
+ .rodata.g_lcd_clock_settings
+                0x00005248        0x6 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+ *fill*         0x0000524e        0x2 ff
+ .rodata.g_cgc_version
+                0x00005250        0x4 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+ .rodata.g_adc_on_adc
+                0x00005254       0x34 ./synergy/ssp/src/driver/r_adc/r_adc.o
+                0x00005254                g_adc_on_adc
+ .rodata.s_adc_version
+                0x00005288        0x4 ./synergy/ssp/src/driver/r_adc/r_adc.o
+ .rodata.g_cgc_feature
+                0x0000528c       0x2c ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
+ .rodata.g_fmi_data
+                0x000052b8      0x400 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_fmi_R7FS7G27H3A01CFC.o
+                0x000052b8                g_fmi_data
+ .rodata.gp_mstp
+                0x000056b8       0x10 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+ .rodata.g_bsp_module_stop
+                0x000056c8       0x46 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+ *fill*         0x0000570e        0x2 ff
+ .rodata.gp_vector_information
+                0x00005710        0x4 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
+                0x00005710                gp_vector_information
+ .rodata.g_prcr_masks
+                0x00005714        0x6 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
+ *fill*         0x0000571a        0x2 ff
+ .rodata.g_elc_cfg
+                0x0000571c        0xc ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
+ .rodata.g_adc0
+                0x00005728       0x10 ./src/synergy_gen/hal_data.o
+                0x00005728                g_adc0
+ .rodata.g_adc0_cfg
+                0x00005738       0x1c ./src/synergy_gen/hal_data.o
+                0x00005738                g_adc0_cfg
+ .rodata.g_timer1_extend
+                0x00005754        0x4 ./src/synergy_gen/hal_data.o
+ .rodata.g_adc0_channel_cfg
+                0x00005758       0x14 ./src/synergy_gen/hal_data.o
+                0x00005758                g_adc0_channel_cfg
+ .rodata.g_timer1_cfg
+                0x0000576c       0x20 ./src/synergy_gen/hal_data.o
+ .rodata.g_timer1
+                0x0000578c        0xc ./src/synergy_gen/hal_data.o
+                0x0000578c                g_timer1
+ .rodata.g_bsp_pin_cfg
+                0x00005798        0x8 ./src/synergy_gen/pin_data.o
+                0x00005798                g_bsp_pin_cfg
+ .rodata.g_bsp_pin_cfg_data
+                0x000057a0      0x380 ./src/synergy_gen/pin_data.o
+                0x000057a0                g_bsp_pin_cfg_data
+                0x00005b20                __usb_dev_descriptor_start_fs = .
+ *(.usb_device_desc_fs*)
+                0x00005b20                __usb_cfg_descriptor_start_fs = .
+ *(.usb_config_desc_fs*)
+                0x00005b20                __usb_interface_descriptor_start_fs = .
+ *(.usb_interface_desc_fs*)
+                0x00005b20                __usb_descriptor_end_fs = .
+                0x00005b20                __usb_dev_descriptor_start_hs = .
+ *(.usb_device_desc_hs*)
+                0x00005b20                __usb_cfg_descriptor_start_hs = .
+ *(.usb_config_desc_hs*)
+                0x00005b20                __usb_interface_descriptor_start_hs = .
+ *(.usb_interface_desc_hs*)
+                0x00005b20                __usb_descriptor_end_hs = .
+ *(.eh_frame*)
+ .eh_frame      0x00005b20        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
+ .eh_frame      0x00005b20        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+                0x00005b24                __ROM_End = .
+>>>>>>> develop
                 0x00000040                __Vectors_Size = (__Vectors_End - __Vectors)
                 0x00000000                __Vector_Info_Size = (__Vector_Info_End - __Vector_Info_Start)
                 0x000001b0                __Lock_Lookup_Size = (__Lock_Lookup_End - __Lock_Lookup_Start)
 
+<<<<<<< HEAD
 .glue_7         0x00005b50        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
@@ -4265,10 +4412,26 @@ END GROUP
  .v4_bx         0x00000000        0x0 linker stubs
 
 .iplt           0x00005b50        0x0
+=======
+.glue_7         0x00005b24        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00005b24        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00005b24        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00005b24        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00005b24        0x0
+>>>>>>> develop
  .iplt          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
+<<<<<<< HEAD
                 0x00005b50                __exidx_start = .
 
 .ARM.exidx      0x00005b50        0x8
@@ -4278,13 +4441,28 @@ END GROUP
                                   0x8 (size before relaxing)
                 0x00005b58                __exidx_end = .
                 0x00005b58                __etext = .
+=======
+                0x00005b24                __exidx_start = .
+
+.ARM.exidx      0x00005b24        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x00005b24        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x00005b2c        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_udivdi3.o)
+                                  0x8 (size before relaxing)
+                0x00005b2c                __exidx_end = .
+                0x00005b2c                __etext = .
+>>>>>>> develop
 
 .ssp_dtc_vector_table
                 0x1ffe0000        0x0
                 0x1ffe0000                . = ORIGIN (RAM)
  *(.ssp_dtc_vector_table)
 
+<<<<<<< HEAD
 .data           0x1ffe0000       0x78 load address 0x00005b58
+=======
+.data           0x1ffe0000       0x78 load address 0x00005b2c
+>>>>>>> develop
                 0x1ffe0000                __data_start__ = .
  *(vtable)
  *(.data.*)
@@ -4642,7 +4820,11 @@ END GROUP
                 0x1ffe0078                __data_end__ = .
                 0x0000006c                __Lock_Size = (__Lock_End - __Lock_Start)
 
+<<<<<<< HEAD
 .igot.plt       0x1ffe0078        0x0 load address 0x00005bd0
+=======
+.igot.plt       0x1ffe0078        0x0 load address 0x00005ba4
+>>>>>>> develop
  .igot.plt      0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
 
 .qspi_flash     0x60000000        0x0
@@ -4650,10 +4832,17 @@ END GROUP
  *(.qspi_flash*)
                 0x60000000                __qspi_flash_end__ = .
                 0x00000000                __qspi_flash_code_size__ = (__qspi_flash_end__ - __qspi_flash_start__)
+<<<<<<< HEAD
                 0x00005bd0                __qspi_flash_code_addr__ = (__etext + (__data_end__ - __data_start__))
 
 .qspi_non_retentive
                 0x60000000        0x0 load address 0x00005bd0
+=======
+                0x00005ba4                __qspi_flash_code_addr__ = (__etext + (__data_end__ - __data_start__))
+
+.qspi_non_retentive
+                0x60000000        0x0 load address 0x00005ba4
+>>>>>>> develop
                 0x60000000                __qspi_non_retentive_start__ = .
  *(.qspi_non_retentive*)
                 0x60000000                __qspi_non_retentive_end__ = .
@@ -4662,7 +4851,11 @@ END GROUP
                 0x60000000                __qspi_region_start_address__ = __qspi_flash_start__
                 0x64000000                __qspi_region_end_address__ = (__qspi_flash_start__ + __qspi_region_max_size__)
 
+<<<<<<< HEAD
 .noinit         0x1ffe0078       0x38 load address 0x00005bd0
+=======
+.noinit         0x1ffe0078       0x38 load address 0x00005ba4
+>>>>>>> develop
                 0x1ffe0078                . = ALIGN (0x4)
                 0x1ffe0078                __noinit_start = .
  *(.noinit*)
@@ -4673,7 +4866,11 @@ END GROUP
                 0x1ffe00a8                gp_cgc_feature
                 0x1ffe00b0                __noinit_end = .
 
+<<<<<<< HEAD
 .bss            0x1ffe00b0       0xd4 load address 0x00005c08
+=======
+.bss            0x1ffe00b0       0xd4 load address 0x00005bdc
+>>>>>>> develop
                 0x1ffe00b0                . = ALIGN (0x4)
                 0x1ffe00b0                __bss_start__ = .
  *(.bss*)
@@ -4724,7 +4921,11 @@ END GROUP
  *fill*         0x1ffe0182        0x2 
                 0x1ffe0184                __bss_end__ = .
 
+<<<<<<< HEAD
 .heap           0x1ffe0188     0x1000 load address 0x00005ce0
+=======
+.heap           0x1ffe0188     0x1000 load address 0x00005cb8
+>>>>>>> develop
                 0x1ffe0188                . = ALIGN (0x8)
  *(.heap_d1)
                 0x1ffe0188                . = ALIGN (0x8)
@@ -4735,7 +4936,11 @@ END GROUP
  .heap          0x1ffe0188     0x1000 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
                 0x1ffe1188                __HeapLimit = .
 
+<<<<<<< HEAD
 .stack_dummy    0x1ffe1188     0x1000 load address 0x00006ce0
+=======
+.stack_dummy    0x1ffe1188     0x1000 load address 0x00006cb8
+>>>>>>> develop
                 0x1ffe1188                . = ALIGN (0x8)
                 0x1ffe1188                __StackLimit = .
  *(.stack*)
@@ -5155,6 +5360,7 @@ OUTPUT(Integrator_Project.elf elf32-littlearm)
  .debug_macro   0x00007e99      0x3d7 ./src/AnalogToDigitalConverter.o
  .debug_macro   0x00008270      0x3d7 ./src/hal_entry.o
 
+<<<<<<< HEAD
 .debug_line     0x00000000    0x14589
  .debug_line    0x00000000      0xf86 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
  .debug_line    0x00000f86     0x10cb ./synergy/ssp/src/driver/r_gpt/r_gpt.o
@@ -5245,6 +5451,95 @@ OUTPUT(Integrator_Project.elf elf32-littlearm)
                               0x14816 (size before relaxing)
  .debug_str     0x00022a59       0x26 ./src/hal_entry.o
                               0x13e35 (size before relaxing)
+=======
+.debug_line     0x00000000    0x12c8f
+ .debug_line    0x00000000      0xf02 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
+ .debug_line    0x00000f02     0x1068 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
+ .debug_line    0x00001f6a      0xbcf ./synergy/ssp/src/driver/r_fmi/r_fmi.o
+ .debug_line    0x00002b39      0xb58 ./synergy/ssp/src/driver/r_elc/r_elc.o
+ .debug_line    0x00003691     0x125c ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
+ .debug_line    0x000048ed      0xf61 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+ .debug_line    0x0000584e     0x12a9 ./synergy/ssp/src/driver/r_adc/r_adc.o
+ .debug_line    0x00006af7      0x926 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
+ .debug_line    0x0000741d      0xa59 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
+ .debug_line    0x00007e76      0xaad ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
+ .debug_line    0x00008923      0x8f7 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_fmi_R7FS7G27H3A01CFC.o
+ .debug_line    0x0000921a      0x9cd ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
+ .debug_line    0x00009be7      0x8eb ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
+ .debug_line    0x0000a4d2      0x99e ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+ .debug_line    0x0000ae70      0x8f0 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
+ .debug_line    0x0000b760      0x92c ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
+ .debug_line    0x0000c08c      0x934 ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
+ .debug_line    0x0000c9c0      0x925 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
+ .debug_line    0x0000d2e5      0x9e4 ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
+ .debug_line    0x0000dcc9      0x96c ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
+ .debug_line    0x0000e635      0x92a ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
+ .debug_line    0x0000ef5f      0xad1 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
+ .debug_line    0x0000fa30      0x8f0 ./synergy/board/s7g2_sk/bsp_init.o
+ .debug_line    0x00010320      0xa1a ./synergy/board/s7g2_sk/bsp_qspi.o
+ .debug_line    0x00010d3a      0xa87 ./src/synergy_gen/hal_data.o
+ .debug_line    0x000117c1       0x49 ./src/synergy_gen/main.o
+ .debug_line    0x0001180a      0x95c ./src/synergy_gen/pin_data.o
+ .debug_line    0x00012166      0xb29 ./src/hal_entry.o
+
+.debug_str      0x00000000    0x229fb
+ .debug_str     0x00000000    0x15d80 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
+                              0x1611a (size before relaxing)
+ .debug_str     0x00015d80     0x24d7 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
+                              0x14d81 (size before relaxing)
+ .debug_str     0x00018257      0xa10 ./synergy/ssp/src/driver/r_fmi/r_fmi.o
+                              0x131ca (size before relaxing)
+ .debug_str     0x00018c67      0x604 ./synergy/ssp/src/driver/r_elc/r_elc.o
+                              0x12dd2 (size before relaxing)
+ .debug_str     0x0001926b      0xd4a ./synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o
+                              0x1102a (size before relaxing)
+ .debug_str     0x00019fb5      0x87b ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+                              0x1501d (size before relaxing)
+ .debug_str     0x0001a830     0x48cd ./synergy/ssp/src/driver/r_adc/r_adc.o
+                              0x17f83 (size before relaxing)
+ .debug_str     0x0001f0fd       0x9a ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
+                               0xf046 (size before relaxing)
+ .debug_str     0x0001f197      0x408 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
+                               0xff36 (size before relaxing)
+ .debug_str     0x0001f59f      0x490 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
+                               0xe956 (size before relaxing)
+ .debug_str     0x0001fa2f       0x3b ./synergy/ssp/src/bsp/mcu/s7g2/bsp_fmi_R7FS7G27H3A01CFC.o
+                               0xdde0 (size before relaxing)
+ .debug_str     0x0001fa6a      0x368 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
+                               0xf474 (size before relaxing)
+ .debug_str     0x0001fdd2     0x135e ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
+                               0xf450 (size before relaxing)
+ .debug_str     0x00021130      0x394 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+                              0x101fd (size before relaxing)
+ .debug_str     0x000214c4       0xcb ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
+                               0xde65 (size before relaxing)
+ .debug_str     0x0002158f      0x184 ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
+                               0xf11f (size before relaxing)
+ .debug_str     0x00021713       0xff ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
+                               0xdf17 (size before relaxing)
+ .debug_str     0x00021812       0x84 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
+                               0xe2ca (size before relaxing)
+ .debug_str     0x00021896      0x181 ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
+                               0xf43b (size before relaxing)
+ .debug_str     0x00021a17       0xb0 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
+                               0xeae4 (size before relaxing)
+ .debug_str     0x00021ac7       0xe1 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
+                               0xde8d (size before relaxing)
+ .debug_str     0x00021ba8      0x1ce ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
+                              0x1441d (size before relaxing)
+ .debug_str     0x00021d76       0x32 ./synergy/board/s7g2_sk/bsp_init.o
+                               0xdddc (size before relaxing)
+ .debug_str     0x00021da8      0x8ca ./synergy/board/s7g2_sk/bsp_qspi.o
+                               0xe9a9 (size before relaxing)
+ .debug_str     0x00022672      0x101 ./src/synergy_gen/hal_data.o
+                              0x14eae (size before relaxing)
+ .debug_str     0x00022773       0x66 ./src/synergy_gen/main.o
+                               0x24ed (size before relaxing)
+ .debug_str     0x000227d9      0x1fc ./src/synergy_gen/pin_data.o
+                               0xf427 (size before relaxing)
+ .debug_str     0x000229d5       0x26 ./src/hal_entry.o
+                              0x14b09 (size before relaxing)
+>>>>>>> develop
 
 .debug_frame    0x00000000     0x1980
  .debug_frame   0x00000000      0x258 ./synergy/ssp/src/driver/r_ioport/r_ioport.o

@@ -29,5 +29,5 @@ void ReadAdcChannel0(uint16_t *data)
 
 timer_size_t AdcDataToPercentage(uint16_t *data)
 {
-    return (timer_size_t)(*data * MaxPercentageValue) / AdcMaxOutputValue;
+    return (timer_size_t) (100 - (*data * MaxPercentageValue) / AdcMaxOutputValue);
 }
