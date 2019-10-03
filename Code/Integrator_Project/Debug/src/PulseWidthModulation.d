@@ -1,4 +1,5 @@
-src/hal_entry.o: ../src/hal_entry.c \
+src/PulseWidthModulation.o: ../src/PulseWidthModulation.c \
+ ../src/PulseWidthModulation.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\bsp/bsp_api.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\inc\ssp_common_api.h \
@@ -59,8 +60,9 @@ src/hal_entry.o: ../src/hal_entry.c \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_adc_cfg.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_adc_api.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_elc_api.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_transfer_api.h \
- ../src/AnalogToDigitalConverter.h ../src/PulseWidthModulation.h
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_transfer_api.h
+
+../src/PulseWidthModulation.h:
 
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h:
 
@@ -183,7 +185,3 @@ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Proje
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_elc_api.h:
 
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_transfer_api.h:
-
-../src/AnalogToDigitalConverter.h:
-
-../src/PulseWidthModulation.h:

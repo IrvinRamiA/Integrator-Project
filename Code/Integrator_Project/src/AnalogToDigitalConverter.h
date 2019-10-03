@@ -5,8 +5,8 @@
  * Copyright DSE - Confidential - All rights reserved
  */
 
-#ifndef ANALOG_TO_DIGITAL_CONVERTER
-#define ANALOG_TO_DIGITAL_CONVERTER
+#ifndef ANALOG_TO_DIGITAL_CONVERTER_H
+#define ANALOG_TO_DIGITAL_CONVERTER_H
 
 #include "hal_data.h"
 
