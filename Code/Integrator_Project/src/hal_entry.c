@@ -1,5 +1,5 @@
 /*
- * @file
+ * @file hal_entry.c
  * @brief
  *
  * Copyright DSE - Confidential - All rights reserved
