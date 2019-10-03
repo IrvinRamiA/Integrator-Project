@@ -24,7 +24,7 @@ void hal_entry(void)
     while(1)
     {
         g_adc0.p_api->read(g_adc0.p_ctrl, ADC_REG_CHANNEL_0, &adcData);
-        percentage = (timer_size_t)(adcData * 100) / 255;
+        percentage = (timer_size_t)(100 - (adcData * 100)) / 255;
 
         g_timer1.p_api->dutyCycleSet(g_timer1.p_ctrl, percentage, TIMER_PWM_UNIT_PERCENT, 1);
     }
