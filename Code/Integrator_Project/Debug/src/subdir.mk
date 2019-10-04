@@ -4,15 +4,18 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/PidControl.c \
+../src/AnalogToDigitalConverter.c \
+../src/PulseWidthModulation.c \
 ../src/hal_entry.c 
 
 OBJS += \
-./src/PidControl.o \
+./src/AnalogToDigitalConverter.o \
+./src/PulseWidthModulation.o \
 ./src/hal_entry.o 
 
 C_DEPS += \
-./src/PidControl.d \
+./src/AnalogToDigitalConverter.d \
+./src/PulseWidthModulation.d \
 ./src/hal_entry.d 
 
 
