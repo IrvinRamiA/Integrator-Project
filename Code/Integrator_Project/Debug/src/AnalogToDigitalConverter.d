@@ -1,6 +1,6 @@
-synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o: \
- ../synergy/ssp/src/driver/r_cgc/hw/hw_cgc.c \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_cgc_api.h \
+src/AnalogToDigitalConverter.o: ../src/AnalogToDigitalConverter.c \
+ ../src/AnalogToDigitalConverter.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\bsp/bsp_api.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\inc\ssp_common_api.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\inc\ssp_version.h \
@@ -45,12 +45,26 @@ synergy/ssp/src/driver/r_cgc/hw/hw_cgc.o: \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\src\bsp\mcu\all\bsp_feature.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\src\bsp\mcu\all\bsp_mcu_api.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\src\bsp\mcu\all\bsp_error_checking.h \
- ../synergy/ssp/src/driver/r_cgc/hw/hw_cgc_private.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\bsp/bsp_clock_cfg.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/common_data.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_cgc.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_cgc_cfg.h \
- ../synergy/ssp/src/driver/r_cgc/hw/hw_cgc.h
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_cgc_api.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_ioport.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_ioport_cfg.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_elc.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_elc_cfg.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_elc_api.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_gpt.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_timer_api.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_adc.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_adc_cfg.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_adc_api.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_elc_api.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_transfer_api.h
 
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_cgc_api.h:
+../src/AnalogToDigitalConverter.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h:
 
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\bsp/bsp_api.h:
 
@@ -140,10 +154,34 @@ c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_proje
 
 c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\src\bsp\mcu\all\bsp_error_checking.h:
 
-../synergy/ssp/src/driver/r_cgc/hw/hw_cgc_private.h:
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/common_data.h:
 
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\bsp/bsp_clock_cfg.h:
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_cgc.h:
 
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_cgc_cfg.h:
 
-../synergy/ssp/src/driver/r_cgc/hw/hw_cgc.h:
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_cgc_api.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_ioport.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_ioport_cfg.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_elc.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_elc_cfg.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_elc_api.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_gpt.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_timer_api.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_adc.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_adc_cfg.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_adc_api.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_elc_api.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_transfer_api.h:
