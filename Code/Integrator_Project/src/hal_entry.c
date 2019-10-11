@@ -9,10 +9,10 @@
 
 #include "AnalogToDigitalConverter.h"
 #include "PulseWidthModulation.h"
+#include "InputCapture.h"
 
 uint16_t adcData;
 timer_size_t percentage;
-
 uint16_t measuredSpeedInRpm = 0;
 uint16_t setPointInRpm = 0;
 uint8_t outputValue = 0;
@@ -25,6 +25,8 @@ void hal_entry(void)
 
     OpenTimer();
     StartTimer();
+
+    InitializeInputCapture();
 
     while(1)
     {
