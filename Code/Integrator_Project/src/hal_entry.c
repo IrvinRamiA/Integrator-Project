@@ -9,6 +9,7 @@
 
 #include "AnalogToDigitalConverter.h"
 #include "PulseWidthModulation.h"
+#include "InputCapture.h"
 
 uint16_t adcData;
 timer_size_t percentage;
@@ -25,6 +26,8 @@ void hal_entry(void)
 
     OpenTimer();
     StartTimer();
+
+    InputCapture();
 
     while(1)
     {

@@ -29,5 +29,6 @@ synergy/ssp/src/driver/r_cgc \
 synergy/ssp/src/driver/r_elc \
 synergy/ssp/src/driver/r_fmi \
 synergy/ssp/src/driver/r_gpt \
+synergy/ssp/src/driver/r_gpt_input_capture \
 synergy/ssp/src/driver/r_ioport \
 
