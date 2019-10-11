@@ -13,7 +13,6 @@
 
 uint16_t adcData;
 timer_size_t percentage;
-
 uint16_t measuredSpeedInRpm = 0;
 uint16_t setPointInRpm = 0;
 uint8_t outputValue = 0;
