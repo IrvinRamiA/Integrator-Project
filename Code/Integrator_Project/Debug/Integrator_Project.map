@@ -1,5 +1,11 @@
 Archive member included because of file (symbol)
 
+c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+                              ./src/PidControl.o (__aeabi_dadd)
+c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+                              ./src/PidControl.o (__aeabi_dmul)
+c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_fixunsdfsi.o)
+                              ./src/PidControl.o (__aeabi_d2uiz)
 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_aeabi_uldivmod.o)
                               ./synergy/ssp/src/driver/r_gpt/r_gpt.o (__aeabi_uldivmod)
 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(bpabi.o)
@@ -2769,6 +2775,165 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./src/AnalogToDigitalConverter.o
  .debug_macro   0x00000000       0x10 ./src/AnalogToDigitalConverter.o
  .debug_macro   0x00000000       0xfa ./src/AnalogToDigitalConverter.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .group         0x00000000        0x8 ./src/PidControl.o
+ .text          0x00000000        0x0 ./src/PidControl.o
+ .data          0x00000000        0x0 ./src/PidControl.o
+ .bss           0x00000000        0x0 ./src/PidControl.o
+ .text.setGains
+                0x00000000       0x5c ./src/PidControl.o
+ .text.PidSpeedControl
+                0x00000000       0xec ./src/PidControl.o
+ .bss.lastTimeInMs
+                0x00000000        0x4 ./src/PidControl.o
+ .bss.integralError
+                0x00000000        0x1 ./src/PidControl.o
+ .bss.currentTimeInCycles
+                0x00000000        0x4 ./src/PidControl.o
+ .bss.sampleTimeInSec
+                0x00000000        0x8 ./src/PidControl.o
+ .bss.currentTimeInMs
+                0x00000000        0x4 ./src/PidControl.o
+ .bss.kD        0x00000000        0x8 ./src/PidControl.o
+ .bss.error     0x00000000        0x1 ./src/PidControl.o
+ .bss.derivativeError
+                0x00000000        0x1 ./src/PidControl.o
+ .bss.timeChangeInMs
+                0x00000000        0x4 ./src/PidControl.o
+ .bss.kI        0x00000000        0x8 ./src/PidControl.o
+ .bss.output    0x00000000        0x1 ./src/PidControl.o
+ .bss.lastError
+                0x00000000        0x1 ./src/PidControl.o
+ .bss.kP        0x00000000        0x8 ./src/PidControl.o
+ .debug_info    0x00000000      0x451 ./src/PidControl.o
+ .debug_abbrev  0x00000000      0x12b ./src/PidControl.o
+ .debug_loc     0x00000000       0xa5 ./src/PidControl.o
+ .debug_aranges
+                0x00000000       0x28 ./src/PidControl.o
+ .debug_ranges  0x00000000       0x18 ./src/PidControl.o
+ .debug_macro   0x00000000      0x3d7 ./src/PidControl.o
+ .debug_macro   0x00000000      0x874 ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0x44 ./src/PidControl.o
+ .debug_macro   0x00000000       0xe3 ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000      0x1df ./src/PidControl.o
+ .debug_macro   0x00000000       0x58 ./src/PidControl.o
+ .debug_macro   0x00000000       0x35 ./src/PidControl.o
+ .debug_macro   0x00000000       0x9c ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x28 ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0x6a ./src/PidControl.o
+ .debug_macro   0x00000000       0x2e ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x28 ./src/PidControl.o
+ .debug_macro   0x00000000       0x1c ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0xd9 ./src/PidControl.o
+ .debug_macro   0x00000000      0xfe0 ./src/PidControl.o
+ .debug_macro   0x00000000       0xe2 ./src/PidControl.o
+ .debug_macro   0x00000000      0x7a4 ./src/PidControl.o
+ .debug_macro   0x00000000       0x5e ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0x1c ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x58 ./src/PidControl.o
+ .debug_macro   0x00000000      0x166 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x64 ./src/PidControl.o
+ .debug_macro   0x00000000       0x69 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x1c ./src/PidControl.o
+ .debug_macro   0x00000000       0x29 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x34 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x35 ./src/PidControl.o
+ .debug_macro   0x00000000       0x52 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x43 ./src/PidControl.o
+ .debug_macro   0x00000000      0x180 ./src/PidControl.o
+ .debug_macro   0x00000000      0x297 ./src/PidControl.o
+ .debug_macro   0x00000000       0x22 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0x16 ./src/PidControl.o
+ .debug_macro   0x00000000       0x10 ./src/PidControl.o
+ .debug_macro   0x00000000       0xfa ./src/PidControl.o
+ .debug_line    0x00000000      0xbae ./src/PidControl.o
+ .debug_str     0x00000000    0x10718 ./src/PidControl.o
+ .comment       0x00000000       0x71 ./src/PidControl.o
+ .debug_frame   0x00000000       0x5c ./src/PidControl.o
+ .ARM.attributes
+                0x00000000       0x39 ./src/PidControl.o
  .group         0x00000000        0x8 ./src/PulseWidthModulation.o
  .group         0x00000000        0x8 ./src/PulseWidthModulation.o
  .group         0x00000000        0x8 ./src/PulseWidthModulation.o
@@ -3011,6 +3176,21 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./src/hal_entry.o
  .debug_macro   0x00000000       0x10 ./src/hal_entry.o
  .debug_macro   0x00000000       0xfa ./src/hal_entry.o
+ .text          0x00000000      0x370 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000000       0x22 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+ .text          0x00000000      0x424 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000000       0x22 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+ .text          0x00000000       0x40 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x00000000       0x22 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_arm_fixunsdfsi.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_aeabi_uldivmod.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(_aeabi_uldivmod.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a(bpabi.o)
@@ -3335,6 +3515,7 @@ LOAD ./src/synergy_gen/hal_data.o
 LOAD ./src/synergy_gen/main.o
 LOAD ./src/synergy_gen/pin_data.o
 LOAD ./src/AnalogToDigitalConverter.o
+LOAD ./src/PidControl.o
 LOAD ./src/PulseWidthModulation.o
 LOAD ./src/hal_entry.o
 LOAD C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\src\bsp\cmsis\DSP_Lib\cm4_gcc\libDSP_Lib.a
