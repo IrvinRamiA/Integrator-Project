@@ -26,7 +26,7 @@ void hal_entry(void)
     OpenTimer();
     StartTimer();
 
-    InputCapture();
+    InitializeInputCapture();
 
     while(1)
     {

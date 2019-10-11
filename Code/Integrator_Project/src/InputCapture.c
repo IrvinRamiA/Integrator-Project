@@ -17,7 +17,7 @@ uint32_t captureCounter = 0;
 uint32_t timeCapturedTruncated = 0;
 uint32_t frequency = 0;
 
-void InputCapture(void)
+void InitializeInputCapture(void)
 {
     g_input_capture.p_api->open(g_input_capture.p_ctrl, g_input_capture.p_cfg);
 }

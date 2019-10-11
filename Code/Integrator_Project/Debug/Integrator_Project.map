@@ -4686,9 +4686,9 @@ END GROUP
  .text.AdcDataToPercentage
                 0x0000501c       0x20 ./src/AnalogToDigitalConverter.o
                 0x0000501c                AdcDataToPercentage
- .text.InputCapture
+ .text.InitializeInputCapture
                 0x0000503c       0x10 ./src/InputCapture.o
-                0x0000503c                InputCapture
+                0x0000503c                InitializeInputCapture
  .text.InputCapture_Callback
                 0x0000504c       0xc4 ./src/InputCapture.o
                 0x0000504c                InputCapture_Callback
@@ -5870,7 +5870,7 @@ OUTPUT(Integrator_Project.elf elf32-littlearm)
  .debug_line    0x000141d0      0xb1f ./src/PulseWidthModulation.o
  .debug_line    0x00014cef      0xb37 ./src/hal_entry.o
 
-.debug_str      0x00000000    0x23aa5
+.debug_str      0x00000000    0x23aaf
  .debug_str     0x00000000    0x15d7c ./synergy/ssp/src/driver/r_ioport/r_ioport.o
                               0x16116 (size before relaxing)
  .debug_str     0x00015d7c     0x1cee ./synergy/ssp/src/driver/r_gpt_input_capture/r_gpt_input_capture.o
@@ -5929,12 +5929,12 @@ OUTPUT(Integrator_Project.elf elf32-littlearm)
                                0xf423 (size before relaxing)
  .debug_str     0x00023862       0xca ./src/AnalogToDigitalConverter.o
                               0x14928 (size before relaxing)
- .debug_str     0x0002392c       0xcc ./src/InputCapture.o
-                              0x12598 (size before relaxing)
- .debug_str     0x000239f8       0x65 ./src/PulseWidthModulation.o
+ .debug_str     0x0002392c       0xd6 ./src/InputCapture.o
+                              0x125a2 (size before relaxing)
+ .debug_str     0x00023a02       0x65 ./src/PulseWidthModulation.o
                               0x13f05 (size before relaxing)
- .debug_str     0x00023a5d       0x48 ./src/hal_entry.o
-                              0x10883 (size before relaxing)
+ .debug_str     0x00023a67       0x48 ./src/hal_entry.o
+                              0x1088d (size before relaxing)
 
 .debug_frame    0x00000000     0x1b68
  .debug_frame   0x00000000      0x258 ./synergy/ssp/src/driver/r_ioport/r_ioport.o

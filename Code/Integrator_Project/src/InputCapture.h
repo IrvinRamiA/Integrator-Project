@@ -12,6 +12,7 @@
 
 input_capture_info_t input_capture_info;
 uint32_t rpm;
-void InputCapture(void);
+
+void InitializeInputCapture(void);
 
 #endif
