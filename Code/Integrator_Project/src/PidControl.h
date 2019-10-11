@@ -1,5 +1,5 @@
 /*!
- * @file
+ * @file PidControl.h
  * @brief
  *
  * Copyright DSE 3 - Confidential - All rights reserved
@@ -10,36 +10,30 @@
 
 #include "hal_data.h"
 
-enum PidControlConstants
-{
-    Kp = 5,
-    Ki = 1,
-    Kd = 4
-};
-
 enum TimeVariables
 {
-    SamplingTimeInMs = 100,
-};
-
-enum PwmDutyCycleLimits
-{
-    PwmDutyCycleLowerLimit = 0,
-    PwmDutyCycleUpperLimit = 255
+    SampleTimeInMs = 100,
+    CyclesPerMs = 240000,
+    MsPerSec = 1000
 };
 
 uint8_t error = 0;
 uint8_t derivativeError = 0;
 uint8_t integralError = 0;
-uint8_t previousError = 0;
-uint8_t proportional = 0;
-uint8_t derivative = 0;
-uint8_t integral = 0;
+uint8_t lastError = 0;
 uint8_t output = 0;
-uint8_t time = 0;
-uint8_t previousTime = 0;
-uint8_t samplingTime = 0;
 
-uint8_t SpeedPidControl(uint8_t measuredSpeedInRpm, uint8_t setPointInRpm);
+uint32_t currentTimeInMs = 0;
+uint32_t currentTimeInCycles = 0;
+uint32_t lastTimeInMs = 0;
+uint32_t timeChangeInMs = 0;
+double sampleTimeInSec = 0;
+
+double kP = 0;
+double kI = 0;
+double kD = 0;
+
+void PidSpeedControl(uint16_t *myMeasuredSpeedInRpm, uint16_t *mySetPointInRpm, uint8_t *myOutputValue);
+void setGains(uint8_t proportionalGain, uint8_t integralGain, uint8_t derivativeGain);
 
 #endif

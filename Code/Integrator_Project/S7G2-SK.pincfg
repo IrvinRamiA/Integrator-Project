@@ -264,7 +264,7 @@
   <v1:configSetting configurationId="ctsu0.tscap" altId="ctsu0.tscap.p205">
     <v1:connectionSetting altId="p205.ctsu0.tscap"/>
   </v1:configSetting>
-  <v1:configSetting configurationId="etherc1.rmii.txd_en" altId="etherc1.rmii.txd_en.none"></v1:configSetting>
+  <v1:configSetting configurationId="etherc1.rmii.txd_en" altId="etherc1.rmii.txd_en.none"/>
   <v1:configSetting configurationId="p901.gpio_mode" altId="p901.gpio_mode.gpio_mode_peripheral"/>
   <v1:configSetting configurationId="sci8.sck" altId="sci8.sck.p106">
     <v1:connectionSetting altId="p106.sci8.sck"/>
@@ -354,7 +354,7 @@
   <v1:configSetting configurationId="etherc1.rmii.txd0" altId="etherc1.rmii.txd0.p700">
     <v1:connectionSetting altId="p700.etherc1.rmii.txd0"/>
   </v1:configSetting>
-  <v1:configSetting configurationId="etherc1.rmii.txd1" altId="etherc1.rmii.txd1.none"></v1:configSetting>
+  <v1:configSetting configurationId="etherc1.rmii.txd1" altId="etherc1.rmii.txd1.none"/>
   <v1:configSetting configurationId="sci0.sck" altId="sci0.sck.p412">
     <v1:connectionSetting altId="p412.sci0.sck"/>
   </v1:configSetting>
