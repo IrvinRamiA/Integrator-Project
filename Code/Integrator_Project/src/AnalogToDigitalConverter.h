@@ -10,10 +10,10 @@
 
 #include "hal_data.h"
 
-enum ConversionToPercentageVariables
+enum ConversionToSetPointVariables
 {
     AdcMaxOutputValue = 255,
-    MaxPercentageValue = 100
+    MaxSetPointValue = 3000
 };
 
 void OpenAdc();

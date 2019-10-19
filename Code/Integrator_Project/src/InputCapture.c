@@ -7,16 +7,6 @@
 
 #include "InputCapture.h"
 
-#define CHANNEL_ZERO (0U)
-#define TIMER_ONE_SECOND (1000000000U)
-#define BIT_32 (0x100000000U)
-
-input_capture_info_t input_capture_info;
-uint64_t captureOverflow = 0;
-uint32_t captureCounter = 0;
-uint32_t timeCapturedTruncated = 0;
-uint32_t frequency = 0;
-
 void InitializeInputCapture(void)
 {
     g_input_capture.p_api->open(g_input_capture.p_ctrl, g_input_capture.p_cfg);

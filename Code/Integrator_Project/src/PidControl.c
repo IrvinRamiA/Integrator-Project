@@ -7,28 +7,43 @@
 
 #include "PidControl.h"
 
-void setGains(uint8_t proportionalGain, uint8_t integralGain, uint8_t derivativeGain)
+void setGains(double proportionalGain, double integralGain, double derivativeGain)
 {
-    sampleTimeInSec = SampleTimeInMs / MsPerSec;
+    sampleTimeInSec = (double) SampleTimeInMs / (double) MsPerSec;
     kP = proportionalGain;
-    kI = (double) integralGain * sampleTimeInSec;
-    kD = (double) derivativeGain / sampleTimeInSec;
+    kI = (integralGain * sampleTimeInSec);
+    kD = (derivativeGain / sampleTimeInSec);
 
     lastTimeInMs = DWT->CYCCNT / CyclesPerMs - SampleTimeInMs;
 }
 
-void PidSpeedControl(uint16_t *myMeasuredSpeedInRpm, uint16_t *mySetPointInRpm, uint8_t *myOutputValue)
+void PidSpeedControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm, uint32_t *myOutputValue)
 {
     currentTimeInCycles = DWT->CYCCNT;
     currentTimeInMs = currentTimeInCycles / CyclesPerMs;
     timeChangeInMs = currentTimeInMs - lastTimeInMs;
     if(timeChangeInMs >= SampleTimeInMs)
     {
-        error = (uint8_t) (*mySetPointInRpm - *myMeasuredSpeedInRpm);
-        derivativeError = (uint8_t) (error - lastError);
-        integralError = (uint8_t) (integralError + error);
+        if(*mySetPointInRpm >= *myMeasuredSpeedInRpm){
+            error = (uint32_t) (*mySetPointInRpm - *myMeasuredSpeedInRpm);
+        }
+        else
+        {
+            error = 0;
+            //error = (uint32_t) (*myMeasuredSpeedInRpm - *mySetPointInRpm);
+        }
+        derivativeError = (uint32_t) (error - lastError);
+        integralError = (uint32_t) (integralError + error);
 
-        *myOutputValue = (uint8_t) (kP * error + kI * integralError + kD * derivativeError);
+        outputDebug = (uint32_t) (kP * error + kI * integralError + kD * derivativeError);
+
+        if(outputDebug > 255)
+        {
+            outputDebug = 255;  // 0 - 255
+        }
+
+        test = (uint32_t) (outputDebug * ((double)100 / (double)255));
+        *myOutputValue = MaxPercentageValue - (uint32_t) (outputDebug * ((double) MaxPercentageValue / (double) PidMaxOutputValue));
 
         lastError = error;
         lastTimeInMs = currentTimeInMs;
