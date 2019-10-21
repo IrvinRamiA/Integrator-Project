@@ -7,21 +7,43 @@
 
 #include "PidControl.h"
 
-void setGains(double proportionalGain, double integralGain, double derivativeGain)
+void InitializeVariablesPid()
 {
+    error = ZeroPid;
+    derivativeError = ZeroPid;
+    integralError = ZeroPid;
+    lastError = ZeroPid;
+    outputDebug = ZeroPid;
+
+    currentTimeInMs = ZeroPid;
+    currentTimeInCycles = ZeroPid;
+    lastTimeInMs = ZeroPid;
+    timeChangeInMs = ZeroPid;
+    sampleTimeInSec = ZeroPid;
+
+    kP = ZeroPid;
+    kI = ZeroPid;
+    kD = ZeroPid;
+}
+
+void SetGainsPid(double proportionalGain, double integralGain, double derivativeGain)
+{
+    InitializeVariablesPid();
+
     sampleTimeInSec = (double) SampleTimeInMs / (double) MsPerSec;
     kP = proportionalGain;
-    kI = (integralGain * sampleTimeInSec);
-    kD = (derivativeGain / sampleTimeInSec);
+    kI = integralGain * sampleTimeInSec;
+    kD = derivativeGain / sampleTimeInSec;
 
     lastTimeInMs = DWT->CYCCNT / CyclesPerMs - SampleTimeInMs;
 }
 
-void PidSpeedControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm, uint32_t *myOutputValue)
+void ComputePidControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm, uint32_t *myOutputValue)
 {
     currentTimeInCycles = DWT->CYCCNT;
     currentTimeInMs = currentTimeInCycles / CyclesPerMs;
     timeChangeInMs = currentTimeInMs - lastTimeInMs;
+
     if(timeChangeInMs >= SampleTimeInMs)
     {
         if(*mySetPointInRpm >= *myMeasuredSpeedInRpm){
@@ -29,21 +51,21 @@ void PidSpeedControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm, 
         }
         else
         {
-            error = 0;
-            //error = (uint32_t) (*myMeasuredSpeedInRpm - *mySetPointInRpm);
+            error = ZeroPid;
         }
+
         derivativeError = (uint32_t) (error - lastError);
         integralError = (uint32_t) (integralError + error);
 
         outputDebug = (uint32_t) (kP * error + kI * integralError + kD * derivativeError);
 
-        if(outputDebug > 255)
+        if(outputDebug > PidMaxOutputValue)
         {
-            outputDebug = 255;  // 0 - 255
+            outputDebug = PidMaxOutputValue;
         }
 
-        test = (uint32_t) (outputDebug * ((double)100 / (double)255));
-        *myOutputValue = MaxPercentageValue - (uint32_t) (outputDebug * ((double) MaxPercentageValue / (double) PidMaxOutputValue));
+        outputNotInverted = (uint32_t) (outputDebug * ((double)MaxPercentageValue / (double)PidMaxOutputValue));
+        *myOutputValue = MaxPercentageValue - outputNotInverted;
 
         lastError = error;
         lastTimeInMs = currentTimeInMs;

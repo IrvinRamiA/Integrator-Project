@@ -26,7 +26,12 @@ double kP;
 double kI;
 double kD;
 
-uint32_t test;
+uint32_t outputNotInverted;
+
+enum InitializationValuesPid
+{
+    ZeroPid = 0
+};
 
 enum ConversionToPercentageVariables
 {
@@ -41,7 +46,8 @@ enum TimeVariables
     MsPerSec = 1000
 };
 
-void PidSpeedControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm, uint32_t *myOutputValue);
-void setGains(double proportionalGain, double integralGain, double derivativeGain);
+void InitializeVariablesPid();
+void ComputePidControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm, uint32_t *myOutputValue);
+void SetGainsPid(double proportionalGain, double integralGain, double derivativeGain);
 
 #endif

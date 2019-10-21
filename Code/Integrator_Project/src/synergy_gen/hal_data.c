@@ -1,10 +1,10 @@
 /* generated HAL source file - do not edit */
 #include "hal_data.h"
-#if !defined(SSP_SUPPRESS_ISR_g_input_capture) && !defined(SSP_SUPPRESS_ISR_GPT0)
-SSP_VECTOR_DEFINE_CHAN(gpt_input_capture_counter_overflow_isr, GPT, COUNTER_OVERFLOW, 0);
+#if !defined(SSP_SUPPRESS_ISR_g_input_capture) && !defined(SSP_SUPPRESS_ISR_GPT2)
+SSP_VECTOR_DEFINE_CHAN(gpt_input_capture_counter_overflow_isr, GPT, COUNTER_OVERFLOW, 2);
 #endif
-#if !defined(SSP_SUPPRESS_ISR_g_input_capture) && !defined(SSP_SUPPRESS_ISR_GPT0)
-SSP_VECTOR_DEFINE_CHAN(gpt_input_capture_isr, GPT, CAPTURE_COMPARE_A, 0);
+#if !defined(SSP_SUPPRESS_ISR_g_input_capture) && !defined(SSP_SUPPRESS_ISR_GPT2)
+SSP_VECTOR_DEFINE_CHAN(gpt_input_capture_isr, GPT, CAPTURE_COMPARE_A, 2);
 #endif
 static gpt_input_capture_instance_ctrl_t g_input_capture_ctrl;
 static const gpt_input_capture_extend_t g_input_capture_extend =
@@ -12,7 +12,7 @@ static const gpt_input_capture_extend_t g_input_capture_extend =
           GPT_INPUT_CAPTURE_CLOCK_DIVIDER_1,
   .enable_level = INPUT_CAPTURE_SIGNAL_LEVEL_NONE, .enable_filter = GPT_INPUT_CAPTURE_SIGNAL_FILTER_NONE, };
 static const input_capture_cfg_t g_input_capture_cfg =
-{ .channel = 0, .mode = INPUT_CAPTURE_MODE_PERIOD, .edge = INPUT_CAPTURE_SIGNAL_EDGE_RISING, .repetition =
+{ .channel = 2, .mode = INPUT_CAPTURE_MODE_PERIOD, .edge = INPUT_CAPTURE_SIGNAL_EDGE_RISING, .repetition =
           INPUT_CAPTURE_REPETITION_PERIODIC,
   .autostart = true, .p_callback = InputCapture_Callback, .p_context = &g_input_capture, .p_extend =
           &g_input_capture_extend,
@@ -53,7 +53,7 @@ adc_instance_ctrl_t g_adc0_ctrl;
 const adc_cfg_t g_adc0_cfg =
 { .unit = 0,
   .mode = ADC_MODE_CONTINUOUS_SCAN,
-  .resolution = ADC_RESOLUTION_8_BIT,
+  .resolution = ADC_RESOLUTION_12_BIT,
   .alignment = ADC_ALIGNMENT_RIGHT,
   .add_average_count = ADC_ADD_OFF,
   .clearing = ADC_CLEAR_AFTER_READ_ON,

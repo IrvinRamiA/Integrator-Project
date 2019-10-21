@@ -474,7 +474,6 @@
   </v1:configSetting>
   <v1:configSetting configurationId="p804.gpio_drivecapacity" altId="p804.gpio_speed.gpio_speed_medium"/>
   <v1:configSetting configurationId="p608" altId="p608.input"/>
-  <v1:configSetting configurationId="p103.gpio_drivecapacity" altId="p103.gpio_speed.gpio_speed_medium"/>
   <v1:configSetting configurationId="p607" altId="p607.glcdc0.lcd_data04">
     <v1:connectionSetting altId="glcdc0.lcd_data04.p607"/>
   </v1:configSetting>
@@ -615,9 +614,7 @@
   </v1:configSetting>
   <v1:configSetting configurationId="pa08.gpio_drivecapacity" altId="pa08.gpio_speed.gpio_speed_medium"/>
   <v1:configSetting configurationId="p312" altId="p312.input"/>
-  <v1:configSetting configurationId="spi0.ssl0" altId="spi0.ssl0.p103">
-    <v1:connectionSetting altId="p103.spi0.ssl0"/>
-  </v1:configSetting>
+  <v1:configSetting configurationId="spi0.ssl0" altId="spi0.ssl0.none"/>
   <v1:configSetting configurationId="dac0.mode" altId="dac0.mode.enabled"/>
   <v1:configSetting configurationId="sci2.txd" altId="sci2.txd.p302">
     <v1:connectionSetting altId="p302.sci2.txd"/>
@@ -762,8 +759,8 @@
   <v1:configSetting configurationId="p104" altId="p104.sci8.rxd">
     <v1:connectionSetting altId="sci8.rxd.p104"/>
   </v1:configSetting>
-  <v1:configSetting configurationId="p103" altId="p103.spi0.ssl0">
-    <v1:connectionSetting altId="spi0.ssl0.p103"/>
+  <v1:configSetting configurationId="p103" altId="p103.gpt2.gtioca">
+    <v1:connectionSetting altId="gpt2.gtioca.p103"/>
   </v1:configSetting>
   <v1:configSetting configurationId="p109" altId="p109.debug0.tdo">
     <v1:connectionSetting altId="debug0.tdo.p109"/>
@@ -818,7 +815,6 @@
   <v1:propertySetting propertyId="p108.symbolic_name" value="JTAG_TMS"/>
   <v1:propertySetting propertyId="p502.symbolic_name" value="Quad_SPI_QIO0"/>
   <v1:propertySetting propertyId="p802.symbolic_name" value="GLCD_Controller__Pin_Option_B_LCD_DATA02_B"/>
-  <v1:propertySetting propertyId="p103.symbolic_name" value="SPI0__Pin_Option_A_SSLA0_A"/>
   <v1:propertySetting propertyId="p507.symbolic_name" value="GPIO17"/>
   <v1:propertySetting propertyId="p207.symbolic_name" value="Cap_Touch_Sensing_Unit_TS02"/>
   <v1:propertySetting propertyId="p009.symbolic_name" value="GPIO22"/>
@@ -949,13 +945,12 @@
   <v1:configSetting configurationId="gpt1.gtioca" altId="gpt1.gtioca.p405">
     <v1:connectionSetting altId="p405.gpt1.gtioca"/>
   </v1:configSetting>
-  <v1:configSetting configurationId="gpt1.mode" altId="gpt1.mode.gtiocaandgtiocb.free"/>
-  <v1:configSetting configurationId="gpt0.mode" altId="gpt0.mode.gtiocaorgtiocb.free"/>
-  <v1:configSetting configurationId="gpt0.gtioca" altId="gpt0.gtioca.p512">
-    <v1:connectionSetting altId="p512.gpt0.gtioca"/>
+  <v1:configSetting configurationId="gpt1.mode" altId="gpt1.mode.gtiocaorgtiocb.free"/>
+  <v1:configSetting configurationId="gpt0.mode" altId="gpt0.mode.disabled"/>
+  <v1:configSetting configurationId="gpt0.gtioca" altId="gpt0.gtioca.none"/>
+  <v1:configSetting configurationId="gpt2.mode" altId="gpt2.mode.gtiocaorgtiocb.free"/>
+  <v1:configSetting configurationId="gpt2.gtioca" altId="gpt2.gtioca.p103">
+    <v1:connectionSetting altId="p103.gpt2.gtioca"/>
   </v1:configSetting>
-  <v1:configSetting configurationId="p512.gpio_mode" altId="p512.gpio_mode.gpio_mode_peripheral"/>
-  <v1:configSetting configurationId="p512" altId="p512.gpt0.gtioca">
-    <v1:connectionSetting altId="gpt0.gtioca.p512"/>
-  </v1:configSetting>
+  <v1:configSetting configurationId="gpt0.pairing" altId="gpt0.pairing.free"/>
 </v1:pinSettings>

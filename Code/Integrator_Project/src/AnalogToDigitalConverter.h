@@ -1,5 +1,5 @@
 /*
- * @file
+ * @file AnalogToDigitalConverter.h
  * @brief
  *
  * Copyright DSE - Confidential - All rights reserved
@@ -12,14 +12,15 @@
 
 enum ConversionToSetPointVariables
 {
-    AdcMaxOutputValue = 255,
+    AdcMaxOutputValue = 4095,
     MaxSetPointValue = 3000
 };
 
+void InitializeAdc();
 void OpenAdc();
 void ScanCfgAdc();
 void ScanStartAdc();
-void ReadAdcChannel0(uint16_t *data);
+void ReadAdcChannelZero(uint16_t *data);
 timer_size_t AdcDataToPercentage(uint16_t *data);
 
 #endif

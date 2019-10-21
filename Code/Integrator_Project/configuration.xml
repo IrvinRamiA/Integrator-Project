@@ -165,7 +165,7 @@
     <module id="module.driver.adc_on_adc.716459574">
       <property id="module.driver.adc.name" value="g_adc0"/>
       <property id="module.driver.adc.unit" value="0"/>
-      <property id="module.driver.adc.resolution" value="module.driver.adc.resolution.resolution_8_bit"/>
+      <property id="module.driver.adc.resolution" value="module.driver.adc.resolution.resolution_12_bit"/>
       <property id="module.driver.adc.alignment" value="module.driver.adc.alignment.alignment_right"/>
       <property id="module.driver.adc.clearing" value="module.driver.adc.clearing.clear_after_read_on"/>
       <property id="module.driver.adc.mode" value="module.driver.adc.mode.mode_continuous_scan"/>
@@ -263,7 +263,7 @@
     </module>
     <module id="module.driver.input_capture_on_gpt.1973369747">
       <property id="module.driver.input_capture.name" value="g_input_capture"/>
-      <property id="module.driver.input_capture.channel" value="0"/>
+      <property id="module.driver.input_capture.channel" value="2"/>
       <property id="module.driver.input_capture.mode" value="module.driver.input_capture.mode.period"/>
       <property id="module.driver.input_capture.signal_edge" value="module.driver.input_capture.signal_edge.rising"/>
       <property id="module.driver.input_capture.repetition" value="module.driver.input_capture.repetition.periodic"/>
