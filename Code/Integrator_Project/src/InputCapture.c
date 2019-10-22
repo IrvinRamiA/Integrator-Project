@@ -9,11 +9,11 @@
 
 void InitializeVariablesInputCapture()
 {
-    rpm = ZeroInputCapture;
-    captureOverflow = ZeroInputCapture;
-    captureCounter = ZeroInputCapture;
-    timeCapturedTruncated = ZeroInputCapture;
-    frequency = ZeroInputCapture;
+    rpm = Zero;
+    captureOverflow = Zero;
+    captureCounter = Zero;
+    timeCapturedTruncated = Zero;
+    frequency = Zero;
 }
 
 void InitializeInputCapture(void)
@@ -23,10 +23,10 @@ void InitializeInputCapture(void)
     InitializeVariablesInputCapture();
 }
 
-void InputCapture_Callback(input_capture_callback_args_t *p_args)
+void InputCaptureCallback(input_capture_callback_args_t *p_args)
 {
-    uint32_t pclkdFreq = ZeroInputCapture;
-    uint64_t timeCaptured = ZeroInputCapture;
+    uint32_t pclkdFreq = Zero;
+    uint64_t timeCaptured = Zero;
 
     if(CHANNEL_TWO == p_args->channel)
     {
@@ -42,8 +42,8 @@ void InputCapture_Callback(input_capture_callback_args_t *p_args)
 
                 rpm = frequency * FrequencyToRpmFactor;
 
-                timeCaptured = ZeroInputCapture;
-                captureOverflow = ZeroInputCapture;
+                timeCaptured = Zero;
+                captureOverflow = Zero;
                 break;
 
             case INPUT_CAPTURE_EVENT_OVERFLOW:

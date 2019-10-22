@@ -263,10 +263,10 @@ Synergy Configuration
   Module "ADC Driver on r_adc"
     Parameter Checking: Enabled
     
-  Module "Timer Driver on r_gpt"
+  Module "Input Capture Driver on r_gpt_input_capture"
     Parameter Checking: Default (BSP)
     
-  Module "Input Capture Driver on r_gpt_input_capture"
+  Module "Timer Driver on r_gpt"
     Parameter Checking: Default (BSP)
     
   HAL
@@ -282,6 +282,14 @@ Synergy Configuration
     Instance "g_cgc CGC Driver on r_cgc"
       Name [Fixed]: g_cgc
       
+  Thread "AnalogToDigitalConverterThread"
+    Symbol: analogToDigitalConverterThread
+    Name: AnalogToDigitalConverterThread
+    Stack size (bytes): 1024
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
     Instance "g_adc0 ADC Driver on r_adc"
       Name: g_adc0
       Unit: 0
@@ -365,6 +373,38 @@ Synergy Configuration
       Scan End Interrupt Priority: Disabled
       Scan End Group B Interrupt Priority: Disabled
       
+  Thread "InputCaptureThread"
+    Symbol: inputCaptureThread
+    Name: InputCaptureThread
+    Stack size (bytes): 1024
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+    Instance "g_input_capture Input Capture Driver on r_gpt_input_capture"
+      Name: g_input_capture
+      Channel: 2
+      Mode: Period
+      Signal Edge: Rising
+      Repetition: Periodic
+      Auto Start: True
+      Callback: InputCaptureCallback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 2
+      Overflow Interrupt Priority: Priority 2
+      
+  Thread "MainControlThread"
+    Symbol: mainControlThread
+    Name: MainControlThread
+    Stack size (bytes): 1024
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
     Instance "g_timer1 Timer Driver on r_gpt"
       Name: g_timer1
       Channel: 1
@@ -381,20 +421,16 @@ Synergy Configuration
       Callback: NULL
       Overflow Interrupt Priority: Disabled
       
-    Instance "g_input_capture Input Capture Driver on r_gpt_input_capture"
-      Name: g_input_capture
-      Channel: 2
-      Mode: Period
-      Signal Edge: Rising
-      Repetition: Periodic
-      Auto Start: True
-      Callback: InputCapture_Callback
-      Input Capture Signal Pin: GTIOCA
-      GTIOCx Signal Filter: None
-      Clock Divider: PCLK/1
-      Input Capture Enable Level: None
-      Input Capture Enable Filter: None (No filtering)
-      Capture Interrupt Priority: Priority 2
-      Overflow Interrupt Priority: Priority 2
+    Object "gSpeedMainControlQueue Queue"
+      Name: SpeedMainControlQueue
+      Symbol: gSpeedMainControlQueue
+      Message Size (Words): 1
+      Queue Size (Bytes): 20
+      
+    Object "gSetPointMainControlQueue Queue"
+      Name: SetPointMainControlQueue
+      Symbol: gSetPointMainControlQueue
+      Message Size (Words): 1
+      Queue Size (Bytes): 20
       
   Messaging

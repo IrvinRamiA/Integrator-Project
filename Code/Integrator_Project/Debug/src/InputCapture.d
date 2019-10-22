@@ -1,5 +1,5 @@
 src/InputCapture.o: ../src/InputCapture.c ../src/InputCapture.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/inputCaptureThread.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\bsp/bsp_api.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\inc\ssp_common_api.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\inc\ssp_version.h \
@@ -44,6 +44,12 @@ src/InputCapture.o: ../src/InputCapture.c ../src/InputCapture.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\src\bsp\mcu\all\bsp_feature.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\src\bsp\mcu\all\bsp_mcu_api.h \
  c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\src\bsp\mcu\all\bsp_error_checking.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_api.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_port.h \
+ c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\inc\framework\el\cm4_gcc\tx_port.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\framework\el/tx_user.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_cmsis.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/common_data.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_cgc.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_cgc_cfg.h \
@@ -55,17 +61,12 @@ src/InputCapture.o: ../src/InputCapture.c ../src/InputCapture.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_elc_api.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_gpt_input_capture.h \
  C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_input_capture_api.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_gpt.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_timer_api.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_adc.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_adc_cfg.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_adc_api.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_elc_api.h \
- C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_transfer_api.h
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h \
+ ../src/Utils.h
 
 ../src/InputCapture.h:
 
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h:
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/inputCaptureThread.h:
 
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\bsp/bsp_api.h:
 
@@ -155,6 +156,18 @@ c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_proje
 
 c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\src\bsp\mcu\all\bsp_error_checking.h:
 
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_api.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_port.h:
+
+c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\inc\framework\el\cm4_gcc\tx_port.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\framework\el/tx_user.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_cmsis.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h:
+
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/common_data.h:
 
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_cgc.h:
@@ -177,16 +190,6 @@ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Proje
 
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_input_capture_api.h:
 
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_gpt.h:
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\src\synergy_gen/hal_data.h:
 
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_timer_api.h:
-
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_adc.h:
-
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\driver/r_adc_cfg.h:
-
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_adc_api.h:
-
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_elc_api.h:
-
-C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\api/r_transfer_api.h:
+../src/Utils.h:

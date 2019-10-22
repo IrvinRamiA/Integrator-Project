@@ -25,5 +25,5 @@ void InitializePwm()
 
 void SetDutyCyclePwm(timer_size_t percentage)
 {
-    g_timer1.p_api->dutyCycleSet(g_timer1.p_ctrl, percentage, TIMER_PWM_UNIT_PERCENT, 1);
+    g_timer1.p_api->dutyCycleSet(g_timer1.p_ctrl, percentage, TIMER_PWM_UNIT_PERCENT, PinOne);
 }
