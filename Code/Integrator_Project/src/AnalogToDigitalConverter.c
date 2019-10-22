@@ -1,11 +1,18 @@
 /*
- * @file
+ * @file AnalogToDigitalConverter.c
  * @brief
  *
  * Copyright DSE - Confidential - All rights reserved
  */
 
 #include "AnalogToDigitalConverter.h"
+
+void InitializeAdc()
+{
+    OpenAdc();
+    ScanCfgAdc();
+    ScanStartAdc();
+}
 
 void OpenAdc()
 {
@@ -22,12 +29,12 @@ void ScanStartAdc()
     g_adc0.p_api->scanStart(g_adc0.p_ctrl);
 }
 
-void ReadAdcChannel0(uint16_t *data)
+void ReadAdcChannelZero(uint16_t *data)
 {
     g_adc0.p_api->read(g_adc0.p_ctrl, ADC_REG_CHANNEL_0, data);
 }
 
 timer_size_t AdcDataToPercentage(uint16_t *data)
 {
-    return (timer_size_t) (100 - (*data * MaxPercentageValue) / AdcMaxOutputValue);
+    return (timer_size_t) ((*data * MaxSetPointValue) / AdcMaxOutputValue);
 }

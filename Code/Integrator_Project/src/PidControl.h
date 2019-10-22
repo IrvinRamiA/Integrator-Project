@@ -10,30 +10,44 @@
 
 #include "hal_data.h"
 
+uint32_t error;
+uint32_t derivativeError;
+uint32_t integralError;
+uint32_t lastError;
+uint32_t outputDebug;
+
+uint32_t currentTimeInMs;
+uint32_t currentTimeInCycles;
+uint32_t lastTimeInMs;
+uint32_t timeChangeInMs;
+double sampleTimeInSec;
+
+double kP;
+double kI;
+double kD;
+
+uint32_t outputNotInverted;
+
+enum InitializationValuesPid
+{
+    ZeroPid = 0
+};
+
+enum ConversionToPercentageVariables
+{
+    PidMaxOutputValue = 255,
+    MaxPercentageValue = 100
+};
+
 enum TimeVariables
 {
-    SampleTimeInMs = 100,
+    SampleTimeInMs = 1,
     CyclesPerMs = 240000,
     MsPerSec = 1000
 };
 
-uint8_t error = 0;
-uint8_t derivativeError = 0;
-uint8_t integralError = 0;
-uint8_t lastError = 0;
-uint8_t output = 0;
-
-uint32_t currentTimeInMs = 0;
-uint32_t currentTimeInCycles = 0;
-uint32_t lastTimeInMs = 0;
-uint32_t timeChangeInMs = 0;
-double sampleTimeInSec = 0;
-
-double kP = 0;
-double kI = 0;
-double kD = 0;
-
-void PidSpeedControl(uint16_t *myMeasuredSpeedInRpm, uint16_t *mySetPointInRpm, uint8_t *myOutputValue);
-void setGains(uint8_t proportionalGain, uint8_t integralGain, uint8_t derivativeGain);
+void InitializeVariablesPid();
+void ComputePidControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm, uint32_t *myOutputValue);
+void SetGainsPid(double proportionalGain, double integralGain, double derivativeGain);
 
 #endif

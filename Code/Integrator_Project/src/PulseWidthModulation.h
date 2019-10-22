@@ -1,5 +1,5 @@
 /*
- * @file
+ * @file PulseWidthModulation.c
  * @brief
  *
  * Copyright DSE - Confidential - All rights reserved
@@ -13,6 +13,7 @@
 
 void OpenTimer();
 void StartTimer();
-void SetDutyCycle(timer_size_t percentage);
+void InitializePwm();
+void SetDutyCyclePwm(timer_size_t percentage);
 
 #endif
