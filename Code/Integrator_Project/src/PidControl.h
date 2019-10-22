@@ -8,7 +8,9 @@
 #ifndef PID_CONTROL_H
 #define PID_CONTROL_H
 
+#include <mainControlThread.h>
 #include "hal_data.h"
+#include "Utils.h"
 
 uint32_t error;
 uint32_t derivativeError;
@@ -27,11 +29,6 @@ double kI;
 double kD;
 
 uint32_t outputNotInverted;
-
-enum InitializationValuesPid
-{
-    ZeroPid = 0
-};
 
 enum ConversionToPercentageVariables
 {

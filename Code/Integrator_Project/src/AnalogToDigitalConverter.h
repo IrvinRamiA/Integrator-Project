@@ -8,7 +8,10 @@
 #ifndef ANALOG_TO_DIGITAL_CONVERTER_H
 #define ANALOG_TO_DIGITAL_CONVERTER_H
 
+#include <analogToDigitalConverterThread.h>
 #include "hal_data.h"
+#include "r_timer_api.h"
+#include "Utils.h"
 
 enum ConversionToSetPointVariables
 {

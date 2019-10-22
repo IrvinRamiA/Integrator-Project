@@ -9,21 +9,21 @@
 
 void InitializeVariablesPid()
 {
-    error = ZeroPid;
-    derivativeError = ZeroPid;
-    integralError = ZeroPid;
-    lastError = ZeroPid;
-    outputDebug = ZeroPid;
+    error = Zero;
+    derivativeError = Zero;
+    integralError = Zero;
+    lastError = Zero;
+    outputDebug = Zero;
 
-    currentTimeInMs = ZeroPid;
-    currentTimeInCycles = ZeroPid;
-    lastTimeInMs = ZeroPid;
-    timeChangeInMs = ZeroPid;
-    sampleTimeInSec = ZeroPid;
+    currentTimeInMs = Zero;
+    currentTimeInCycles = Zero;
+    lastTimeInMs = Zero;
+    timeChangeInMs = Zero;
+    sampleTimeInSec = Zero;
 
-    kP = ZeroPid;
-    kI = ZeroPid;
-    kD = ZeroPid;
+    kP = Zero;
+    kI = Zero;
+    kD = Zero;
 }
 
 void SetGainsPid(double proportionalGain, double integralGain, double derivativeGain)
@@ -51,7 +51,7 @@ void ComputePidControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm
         }
         else
         {
-            error = ZeroPid;
+            error = Zero;
         }
 
         derivativeError = (uint32_t) (error - lastError);

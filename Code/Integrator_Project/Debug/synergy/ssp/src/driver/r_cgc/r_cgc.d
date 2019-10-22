@@ -52,7 +52,12 @@ synergy/ssp/src/driver/r_cgc/r_cgc.o: \
  ../synergy/ssp/src/driver/r_cgc/r_cgc_private_api.h \
  ../synergy/ssp/src/driver/r_cgc/./hw/hw_cgc_private.h \
  ../synergy/ssp/src/driver/r_cgc/./hw/hw_cgc.h \
- ../synergy/ssp/src/driver/r_cgc/./hw/hw_cgc_private.h
+ ../synergy/ssp/src/driver/r_cgc/./hw/hw_cgc_private.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_api.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_port.h \
+ c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\inc\framework\el\cm4_gcc\tx_port.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\framework\el/tx_user.h \
+ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_cmsis.h
 
 C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\driver\instances/r_cgc.h:
 
@@ -159,3 +164,13 @@ C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Proje
 ../synergy/ssp/src/driver/r_cgc/./hw/hw_cgc.h:
 
 ../synergy/ssp/src/driver/r_cgc/./hw/hw_cgc_private.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_api.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_port.h:
+
+c:\users\user\desktop\proyectodiplomado\integrator-project\code\integrator_project\synergy\ssp\inc\framework\el\cm4_gcc\tx_port.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy_cfg\ssp_cfg\framework\el/tx_user.h:
+
+C:\Users\User\Desktop\ProyectoDiplomado\Integrator-Project\Code\Integrator_Project\synergy\ssp\inc\framework\el/tx_cmsis.h:

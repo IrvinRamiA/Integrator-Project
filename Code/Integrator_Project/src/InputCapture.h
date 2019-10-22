@@ -8,7 +8,9 @@
 #ifndef INPUT_CAPTURE_H
 #define INPUT_CAPTURE_H
 
+#include <inputCaptureThread.h>
 #include "hal_data.h"
+#include "Utils.h"
 
 #define CHANNEL_TWO (2U)
 #define TIMER_ONE_SECOND (1000000000U)
@@ -21,11 +23,6 @@ uint64_t captureOverflow;
 uint32_t captureCounter;
 uint32_t timeCapturedTruncated;
 uint32_t frequency;
-
-enum InitializationValuesInputCapture
-{
-    ZeroInputCapture = 0
-};
 
 enum RpmConversion
 {
