@@ -1,14 +1,17 @@
 /*
- * @file MainControlThread_entry.c
+ * @file mainControlThread_entry.c
  * @brief
  *
  * Copyright DSE - Confidential - All rights reserved
  */
 
 #include <mainControlThread.h>
+#include <displayThread.h>
 #include "hal_data.h"
 #include "PulseWidthModulation.h"
 #include "PidControl.h"
+
+ULONG dutyCycleFromMainTx[SizeOne] = {Zero};
 
 ULONG setPointFromAdcRx[SizeOne] = {Zero};
 ULONG speedFromInputCaptureRx[SizeOne] = {Zero};
@@ -30,6 +33,10 @@ void mainControlThread_entry(void)
 
         ComputePidControl(&measuredSpeedInRpm, &setPointInRpm, &outputValue);
         SetDutyCyclePwm(outputValue);
+
+        dutyCycleFromMainTx[IndexZero] = outputValue;
+        tx_queue_send(&gDutyCycleDisplayQueue, dutyCycleFromMainTx, TX_NO_WAIT);
+
         tx_thread_sleep (TenMilliseconds);
     }
 }
