@@ -59,7 +59,7 @@ void mainControlThread_create(void)
 
     UINT err;
     err = tx_thread_create (&mainControlThread, (CHAR *) "MainControlThread", mainControlThread_func, (ULONG) NULL,
-                            &mainControlThread_stack, 1024, 1, 1, 1, TX_AUTO_START);
+                            &mainControlThread_stack, 1024, 2, 2, 1, TX_AUTO_START);
     if (TX_SUCCESS != err)
     {
         tx_startup_err_callback (&mainControlThread, 0);

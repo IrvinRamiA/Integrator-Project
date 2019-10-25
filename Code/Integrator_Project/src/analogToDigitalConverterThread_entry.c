@@ -7,6 +7,7 @@
 
 #include <analogToDigitalConverterThread.h>
 #include <mainControlThread.h>
+#include <displayThread.h>
 #include "AnalogToDigitalConverter.h"
 
 ULONG setPointFromAdcTx[SizeOne] = {Zero};
@@ -21,6 +22,7 @@ void analogToDigitalConverterThread_entry(void)
         ReadAdcChannelZero(&adcData);
         setPointFromAdcTx[IndexZero] = AdcDataToPercentage(&adcData);
         tx_queue_send(&gSetPointMainControlQueue, setPointFromAdcTx, TX_NO_WAIT);
+        tx_queue_send(&gSetPointDisplayQueue, setPointFromAdcTx, TX_NO_WAIT);
         tx_thread_sleep (TenMilliseconds);
     }
 }
