@@ -23,7 +23,7 @@ uint32_t measuredSpeedInRpm = Zero;
 void mainControlThread_entry(void)
 {
     InitializePwm();
-    SetGainsPid(100, 0.001, 0);
+    SetGainsPid(25, 0, 0);
     while (True)
     {
         tx_queue_receive(&gSetPointMainControlQueue, setPointFromAdcRx, WaitTime);
