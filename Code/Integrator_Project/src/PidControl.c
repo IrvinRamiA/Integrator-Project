@@ -56,6 +56,7 @@ void ComputePidControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm
 
         derivativeError = (uint32_t) (*myMeasuredSpeedInRpm - lastInput);
         integralError = (uint32_t) (integralError + kD * error);
+
         if(integralError > PidMaxOutputValue)
         {
             integralError = PidMaxOutputValue;
@@ -68,8 +69,7 @@ void ComputePidControl(uint32_t *myMeasuredSpeedInRpm, uint32_t *mySetPointInRpm
             outputDebug = PidMaxOutputValue;
         }
 
-        outputNotInverted = (uint32_t) (outputDebug * ((double)MaxPercentageValue / (double)PidMaxOutputValue));
-        *myOutputValue = MaxPercentageValue - outputNotInverted;
+        *myOutputValue = PidMaxOutputValue - outputDebug;
 
         lastInput = *myMeasuredSpeedInRpm;
         lastTimeInMs = currentTimeInMs;

@@ -32,8 +32,7 @@ uint32_t outputNotInverted;
 
 enum ConversionToPercentageVariables
 {
-    PidMaxOutputValue = 100,
-    MaxPercentageValue = 100
+    PidMaxOutputValue = 100
 };
 
 enum TimeVariables
