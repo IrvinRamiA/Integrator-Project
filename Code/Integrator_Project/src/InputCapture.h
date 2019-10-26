@@ -26,7 +26,7 @@ uint32_t frequency;
 
 enum RpmConversion
 {
-    FrequencyToRpmFactor = 1
+    FrequencyToRpmFactor = 15
 };
 
 void InitializeVariablesInputCapture(void);
