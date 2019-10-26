@@ -15,7 +15,7 @@
 uint32_t error;
 uint32_t derivativeError;
 uint32_t integralError;
-uint32_t lastError;
+uint32_t lastInput;
 uint32_t outputDebug;
 
 uint32_t currentTimeInMs;
@@ -32,7 +32,7 @@ uint32_t outputNotInverted;
 
 enum ConversionToPercentageVariables
 {
-    PidMaxOutputValue = 1000,
+    PidMaxOutputValue = 100,
     MaxPercentageValue = 100
 };
 
