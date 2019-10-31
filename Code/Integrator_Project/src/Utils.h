@@ -12,7 +12,9 @@
 
 enum InitializationValues
 {
-    Zero = 0
+    Zero = 0,
+    RpmSamplesNumber = 2,
+    AdcSamplesNumber = 3
 };
 
 enum TimeThreadX
